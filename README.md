@@ -1,1 +1,1 @@
-"Contributers - "Siddharth Jha & Mujeeb Khan" 
+"Contributors - "Siddharth Jha & Mujeeb Khan" 
