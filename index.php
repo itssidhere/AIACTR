@@ -140,8 +140,6 @@
 	/*main menu starts*/
   .box1{
 		height: 110px;
-
-		background-color: white;
 		overflow-x: scroll;
 		overflow-y: hidden;
 		white-space: nowrap;
@@ -173,7 +171,7 @@ align-content: center;
 			height:90px;
 		}
 
-		
+
 </style>
 
 
