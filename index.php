@@ -138,10 +138,10 @@
 
 	}
 	/*main menu starts*/
-		.box1{
+  .box1{
 		height: 110px;
 
-	
+		background-color: white;
 		overflow-x: scroll;
 		overflow-y: hidden;
 		white-space: nowrap;
@@ -151,7 +151,8 @@
 		}
 	.card-b{
 		font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-		
+		width: auto;
+		background-color: white;
 		display: inline-block;
 		height: 90px;
 		border-radius: 10px;
@@ -159,19 +160,20 @@
 		margin-top: 8px;
 		margin-right: 6px;
 		text-align: center;
-		align-content: center;
+align-content: center;
 		padding-left: 4px;
 		padding-right: 4px;
 		color: grey;
 		box-shadow: 3px 3px 3px 3px; grey;
-		background-color: grey;
+		  perspective: 1000px;
 	}
 		.image{
-			cursor: pointer;
+
 			width: 70px;
 			height:90px;
-			border-radius: 10px;
 		}
+
+		
 </style>
 
 
@@ -289,7 +291,7 @@
 	<div class="container-fluid">
 		<h2 class="text-center" id="merriweather">AMBEDKAR INSTITUTE OF ADVANCED COMMUNICATION TECHNOLIGIES & RESEARCH</h2>
 		<h4 class="text-center" id="merriweather">(FORMERLY AMBEDKAR INSTITUTE OF TECHNOLOGY)</h4>
-		
+
 		<img src="images/logo.png" height="100" width ="100" class="mx-auto d-block"><br/></br>
 	<div class="main-menu"><h2 class="text-center" id="font-federo" >Main Menu</h2>
 
