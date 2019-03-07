@@ -171,6 +171,38 @@ align-content: center;
 			height:90px;
 		}
 
+  @media(max-width:480px){
+  .flip-card-inner {
+  width: 78px;
+  height:97px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.2s;
+  transform-style: preserve-3d;
+
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-back {
+
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+    .flip-card-front {
+      z-index: 2;
+    }
+
 
 </style>
 
@@ -295,29 +327,45 @@ align-content: center;
 
 
 	<!--main menu starts-->
-	<center>
+  <center>
 <div class="box1">
 
-		<div class="card-b"><img src="images/CAMPUS.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/CIRCULAR.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/CITIZEN CHARTER.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/F&S.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/V&M.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/FORMS.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/GC.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/LIBRARY.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/MD.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/ORDER.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/PD.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/OS.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/PUBLICATION.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/SA.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/SCHOLERSHIPS.jpg" class="image" alt="Placeholder image"></div>
-		<div class="card-b"><img src="images/FAQ.jpg" class="image" alt="Placeholder image"></div>
+		<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/CAMPUS.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top:">Campus</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/CIRCULAR.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%; ">Circular</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/CITIZEN CHARTER.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 >Citizen<br/> Character</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/F&S.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Facilities <br/>and<br/> Services</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/FORMS.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Forms</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/GC.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Greivance<br/> Committee</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/LIBRARY.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%; ">Library</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/MD.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Mandatory<br/> Disclosure</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/ORDER.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Order</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/OS.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Organisation <br/>Setup</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/PD.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Principals<br/> desk</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/PUBLICATION.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Publication</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/SA.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Student <br/>Activities</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/SCHOLERSHIPS.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Scholerships</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/V&M.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Vision<br/> and <br/>Mission</h6></div></div></div>
+
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/FAQ.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">FAQ</h6></div></div></div>
 
 
-		</div>
-		</center>
+
+
+		</div></center>
 </div>
 	<!--main menu ends-->
 
