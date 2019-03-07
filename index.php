@@ -366,6 +366,7 @@ align-content: center;
 
 
 		</div></center>
+    <br />
 </div>
 	<!--main menu ends-->
 
