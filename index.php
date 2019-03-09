@@ -7,8 +7,8 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="js/js1.js"></script>
 
+	<script type="text/javascript" src="js/js1.js"></script>
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,6 +24,9 @@
 		.dropdown:hover > .dropdown-menu{
 		display:block;
 	}
+	}
+	.color-red{
+		background-color:red;
 	}
     .box1{
 		position: relative;
@@ -217,7 +220,7 @@ align-content: center;
 	{
 	    font-size: 15px;
 		opacity: 1;
-		color: #353A41;
+		text-decoration: none;
 	}
 	.notices
 	{
@@ -250,6 +253,12 @@ align-content: center;
 	}
 	}
 	
+	.notice a:hover{
+		backgroud-color:red;
+	}
+	.xyz{
+		background-color:papayawhip;
+	}
 </style>
 
 
@@ -418,32 +427,31 @@ align-content: center;
 
 	<div class="row">
 		<!--code for gallery -->
-		<div class="col-lg-8 col-md-8 col-sm-12 mb-3"><div class="gallery p-2"><h2 class="text-center" id="font-federo">Gallery</h2><center><img class="img-thumbnail" src="images/c.jpg" alt=""></center></div></div>
+		<div class="col-lg-6 col-md-6 col-sm-12 my-3 mx-3" style="background-color:#CD4346"><div class="gallery p-2"><h2 style="color:white" class="text-center" id="font-federo">Gallery</h2><center><img class="img-thumbnail" src="images/c.jpg" alt=""></center></div></div>
 		
 		<!--notice board starts here-->
-		<div class="col-lg-4 col-md-4 col-sm-12">
-			<div class="container-fluid btcolor">
-  <center><h2>Bulletin Board</h2></center>
+		<div class="col-lg-4 col-md-4 col-sm-12 ml-auto my-4">
+			<div class="btcolor">
+  <center><h2 id="font-federo">Bulletin Board</h2></center>
   <br>
   <!-- Nav pills -->
-  <ul class="nav nav-pills selfcenter" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="pill" href="#home">Notices</a>
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item ml-auto">
+      <a class="nav-link active" id="font-federo" data-toggle="pill" href="#home">Notices</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#menu1">RTI</a>
+      <a class="nav-link" id="font-federo" data-toggle="pill" href="#menu1">RTI</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#menu2">Researches</a>
+    <li class="nav-item mr-auto">
+      <a class="nav-link" id="font-federo" data-toggle="pill" href="#menu2">Researches</a>
     </li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
-      <center><h3>Notices</h3></center>
+      <center><h3 id="font-federo">Notices</h3></center>
 		<div class="container-fluid notices" >
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
 			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
 			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
 			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
@@ -460,8 +468,9 @@ align-content: center;
 		</div>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
-     <center><h3>RTI</h3></center> 
+     <center><h3 id="font-federo">RTI</h3></center> 
 <div class="container-fluid notices" >
+			
 			<div class="notice"><a href="">&#9679;&nbsp;Right to information Act 2001 and 2015.</a> </div>
 			<div class="notice"><a href="">&#9679;&nbsp;Manuals Related to AIACTR prepared by RTI committee.</a> </div>
 			<div class="notice"><a href="">&#9679;&nbsp;Information published under RTI Act.</a> </div>
@@ -472,9 +481,8 @@ align-content: center;
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
       
-    <center><h3>Researches</h3></center>
-	<hr/>
-<div class="container-fluid notices" >
+    <center><h3 id="font-federo">Researches</h3></center>
+<div class=" notices" >
 			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
 			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
 			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
@@ -520,6 +528,17 @@ align-content: center;
 <br/>
 
 	</footer>
+	
+	<script>
+		$('.notice').hover(function(){
+			$(this).toggleClass('xyz');
+			
+		});
+		$('.nav-link').hover(function(){
+			$(this).trigger('click');
+		});
+		
+	</script>
 </body>
 
 </html>
