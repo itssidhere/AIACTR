@@ -258,6 +258,7 @@ align-content: center;
 	}
 	.xyz{
 		background-color:papayawhip;
+		cursor:pointer;
 	}
 </style>
 
