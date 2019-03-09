@@ -7,7 +7,7 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.10.0/jquery.hoverIntent.js"></script>
 	<script type="text/javascript" src="js/js1.js"></script>
 
 
@@ -23,6 +23,10 @@
 	@media(min-width:480px){
 		.dropdown:hover > .dropdown-menu{
 		display:block;
+	}
+		.dropdown-menu{
+		 width: 50vw !important;
+   		 height: 60vw !important;
 	}
 	}
 	.color-red{
@@ -260,6 +264,7 @@ align-content: center;
 		background-color:papayawhip;
 		cursor:pointer;
 	}
+	
 </style>
 
 
@@ -282,7 +287,7 @@ align-content: center;
         <a class="nav-link dropdown-toggle" href="#" id="proDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Programmes
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#"><font color=#DBCECE>Graduate</font></a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#"><font color=#DBCECE>Post Graduate</font></a>
@@ -292,7 +297,7 @@ align-content: center;
         <a class="nav-link dropdown-toggle" href="#" id="acaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Academics
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#"><font color=#DBCECE>Departments</font></a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#"><font color=#DBCECE>Syllabus</font></a>
@@ -305,7 +310,7 @@ align-content: center;
         <a class="nav-link dropdown-toggle" href="#" id="proDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           NIRF
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#"><font color=#DBCECE>NIRF2017</font></a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#"><font color=#DBCECE>NIRF2019</font></a>
@@ -333,7 +338,7 @@ align-content: center;
         <a class="nav-link dropdown-toggle" href="#" id="proDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Programmes
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#"><font color=#DBCECE>Graduate</font></a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#"><font color=#DBCECE>Post Graduate</font></a>
@@ -470,7 +475,7 @@ align-content: center;
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
      <center><h3 id="font-federo">RTI</h3></center> 
-<div class="container-fluid notices" >
+	<div class="container-fluid notices" >
 			
 			<div class="notice"><a href="">&#9679;&nbsp;Right to information Act 2001 and 2015.</a> </div>
 			<div class="notice"><a href="">&#9679;&nbsp;Manuals Related to AIACTR prepared by RTI committee.</a> </div>
@@ -484,7 +489,7 @@ align-content: center;
       
     <center><h3 id="font-federo">Researches</h3></center>
 <div class=" notices" >
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reasearches notice will come here.</a> </div>
 			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
 			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
 			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
@@ -535,10 +540,12 @@ align-content: center;
 			$(this).toggleClass('xyz');
 			
 		});
-		$('.nav-link').hover(function(){
-			$(this).trigger('click');
+		if($(window).width()>500){
+			$('.nav-link').hoverIntent(function(){
+				$(this).trigger('click');
+			
 		});
-		
+		}
 	</script>
 </body>
 
