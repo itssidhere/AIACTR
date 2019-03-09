@@ -24,7 +24,6 @@
 		.dropdown:hover > .dropdown-menu{
 		display:block;
 	}
-
 	}
     .box1{
 		position: relative;
@@ -35,8 +34,6 @@
 		background-color: #343A40;
 		color:black;
 	}
-
-
 	.modal.left .modal-dialog,
 	.modal.right .modal-dialog {
 		position: fixed;
@@ -48,18 +45,15 @@
 		     -o-transform: translate3d(0%, 0, 0);
 		        transform: translate3d(0%, 0, 0);
 	}
-
 	.modal.left .modal-content,
 	.modal.right .modal-content {
 		height: 100%;
 		overflow-y: auto;
 	}
-
 	.modal.left .modal-body,
 	.modal.right .modal-body {
 		padding: 15px 15px 80px;
 	}
-
 /*Left*/
 	.modal.left.fade .modal-dialog{
 		left: -0.5em;
@@ -68,11 +62,9 @@
 		     -o-transition: opacity 0.3s linear, left 0.3s ease-out;
 		        transition: opacity 0.3s linear, left 0.3s ease-out;
 	}
-
 	.modal.left.fade.in .modal-dialog{
 		left: 0;
 	}
-
 /*Right*/
 	.modal.right.fade .modal-dialog {
 		right: -1em;
@@ -81,35 +73,27 @@
 		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
 		        transition: opacity 0.3s linear, right 0.3s ease-out;
 	}
-
 	.modal.right.fade.in .modal-dialog {
 		right: 0;
 	}
-
 /* ----- MODAL STYLE ----- */
 	.modal-content {
 		border-radius: 0;
 		border: none;
 	}
-
 	.modal-header {
 		border-bottom-color: #EEEEEE;
 		background-color: #FAFAFA;
 	}
-
 	.modal-body{
 		background-color :#343A40;
 	}
-
 	.modal-body ul li a:hover{
 		color:white;
 	}
-
-
 	.modal-body ul li a{
 		color:#808080;
 	}
-
 	#work-sans{
 		font-family: 'Work Sans', sans-serif;
 	}
@@ -131,11 +115,8 @@
 		background-color:#C3D7A4;
 	}
 	.gallery{
-
-		background-color:#4E84C4;
-		color:white;
-
-
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"
+		color:grey;
 	}
 	/*main menu starts*/
   .box1{
@@ -163,15 +144,28 @@ align-content: center;
 		padding-right: 4px;
 		color: grey;
 		box-shadow: 3px 3px 3px 3px; grey;
-		  perspective: 1000px;
 	}
 		.image{
-
 			width: 70px;
 			height:90px;
+			border-radius: 8px;
 		}
+	.flip-card h6
+	{
+		display: none;
+	}
+	@media(min-width:500px)
+	{
+		
+		.flip-card h6
+		{
+			display: block;
+		}
+	.flip-card
+	{
+				  perspective: 1000px;
 
-  @media(max-width:480px){
+	}
   .flip-card-inner {
   width: 78px;
   height:97px;
@@ -179,31 +173,83 @@ align-content: center;
   text-align: center;
   transition: transform 0.2s;
   transform-style: preserve-3d;
-
   }
-
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
+	
   .flip-card-back {
-
     transform: rotateY(180deg);
     z-index: 1;
-  }
-}
+		}
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
-
-
     .flip-card-front {
       z-index: 2;
-    }
-
-
+	  }
+	}
+	/*notice borad buttin color*/
+	
+	.btcolor .nav a
+	{
+		color: white;
+		background-color: #353A41;
+		margin: 3px;
+	}
+	.notice
+	{
+	 
+		height: auto;
+		width: auto;
+		border-bottom-right-radius: 14px;
+		border-top-left-radius: 14px;
+		border: 2px solid #353A41;
+		padding: 5px;
+		margin-bottom: 3px;
+		
+	}
+	.notice a
+	{
+	    font-size: 15px;
+		opacity: 1;
+		color: #353A41;
+	}
+	.notices
+	{
+		overflow-y: scroll;
+		overflow-x: hidden;
+		height: 350px;
+	}
+	.notices::-webkit-scrollbar {
+		display: none;
+		}
+	@media(max-width:500)
+	{
+		.notice a{
+			font-size: 4px;
+		}
+	}
+		#main {
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+					
+}
+	
+	@media(min-width:500px)
+	{
+	.selfcenter
+	{
+		padding-left: 85px;
+	}
+	}
+	
 </style>
 
 
@@ -257,7 +303,7 @@ align-content: center;
 				</li>
 			<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
 
-			<li class="nav-item"><a href="#" class="nav-link">Fees</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Login/Signup</a></li>
 			</ul>
 		</div>
 		</div>
@@ -308,7 +354,7 @@ align-content: center;
 				</li>
 			<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
 
-			<li class="nav-item"><a href="#" class="nav-link">Fees</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Login/Signup</a></li>
 			</ul>
 				</div>
 
@@ -348,7 +394,7 @@ align-content: center;
 
 	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/ORDER.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Order</h6></div></div></div>
 
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/OS.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Organisation <br/>Setup</h6></div></div></div>
+	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/OS.jpg" class="img-rounded img3responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="font-size: 13px;">Organisation <br/>Setup</h6></div></div></div>
 
 	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/PD.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Principals<br/> desk</h6></div></div></div>
 
@@ -366,25 +412,114 @@ align-content: center;
 
 
 		</div></center>
-    <br />
+    
 </div>
 	<!--main menu ends-->
 
+	<div class="row">
+		<!--code for gallery -->
+		<div class="col-lg-8 col-md-8 col-sm-12 mb-3"><div class="gallery p-2"><h2 class="text-center" id="font-federo">Gallery</h2><center><img class="img-thumbnail" src="images/c.jpg" alt=""></center></div></div>
+		
+		<!--notice board starts here-->
+		<div class="col-lg-4 col-md-4 col-sm-12">
+			<div class="container-fluid btcolor">
+  <center><h2>Bulletin Board</h2></center>
+  <br>
+  <!-- Nav pills -->
+  <ul class="nav nav-pills selfcenter" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#home">Notices</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu1">RTI</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu2">Researches</a>
+    </li>
+  </ul>
 
-	<div class="gallery p-2 mt-2">
-		<h2 class="text-center" id="font-federo">Gallery</h2>
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-12 my-1"><img class="img-thumbnail" src="images/c.jpg" alt=""></div>
-			<div class="col-lg-4 col-md-4 col-sm-12 my-1"><img class="img-thumbnail" src="images/clg1.jpg" alt=""></div>
-			<div class="col-lg-4 col-md-4 col-sm-8 my-1"><img class="img-thumbnail" src="images/clg2.jpg" alt=""></div>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <center><h3>Notices</h3></center>
+		<div class="container-fluid notices" >
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
+			
+			
 		</div>
-
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+     <center><h3>RTI</h3></center> 
+<div class="container-fluid notices" >
+			<div class="notice"><a href="">&#9679;&nbsp;Right to information Act 2001 and 2015.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Manuals Related to AIACTR prepared by RTI committee.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Information published under RTI Act.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;RTI appeals and their replies.</a> </div>
+			<div class="notice"><a href="">&#9679;&nbsp;Fifth Delhi finance commission (DFC) studies related documents.</a> </div>
+			
+		</div>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      
+    <center><h3>Researches</h3></center>
+	<hr/>
+<div class="container-fluid notices" >
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			
+		</div>
+    </div>
+  </div>
+</div>
+		
+		</div>
+<!--Notice board ends here-->
+		
+	
+	</div>
+	
 
 	</div>
 
-	</div>
+<footer>
+	<center><h3>GGSIPU Links</h3></center>
+	<hr style="background-color:#353A41"/>
+	<center>
+		<a href="" style="color: grey;">Events/Announcements</a>
+		&nbsp;
+		&nbsp;
+		<a href="" style="color: grey;">Addmission 2019</a>&nbsp;
+		&nbsp;
+		<a href="" style="color: grey;">Academic policy</a>
+		&nbsp;
+		&nbsp;<a href="" style="color: grey;">Fee Notice</a>&nbsp;
+		&nbsp;
+		<a href="" style="color: grey;">Scheme/Syllabus</a>
+		&nbsp;
+		&nbsp;<a href="" style="color: grey;">Students Welfare</a>
+		&nbsp;
+		&nbsp;<a href="" style="color: grey;">Norms/Ordinances</a>
+		&nbsp;
+		&nbsp;<a href="" style="color: grey;">Fee Payments</a>
+	</center>
+<br/>
+<br/>
 
-
+	</footer>
 </body>
 
 </html>
