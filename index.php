@@ -21,13 +21,43 @@
 <body>
 <style>
 	@media(min-width:480px){
-		.dropdown:hover > .dropdown-menu{
+		.dropdown:hover  .dropdown-menu{
 		display:block;
+		
 	}
-		.dropdown-menu{
+		.dpdn{
 		 width: 50vw !important;
-   		 height: 60vw !important;
+   		 height: 55vw !important;
 	}
+		.snp 
+		{
+			width: 50vw !important;
+			border: none;
+			outline: none;
+		}
+		.dropdown-item{
+			text-align: right !important;
+		}
+		.form-group{
+			padding-right:5px;
+			
+		}
+	
+		
+	}
+	.snp button
+	{
+background-color:#C3D7A4;
+		margin-left: 7px;
+	}
+	.snp input
+	{
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+	.snp form
+	{
+		margin-left: 200px;
 	}
 	.color-red{
 		background-color:red;
@@ -38,7 +68,7 @@
 		left: calc(-50vw + 50%);
     }
 	.navbar-nav > li > .dropdown-menu {
-		background-color: #343A40;
+		background-color:#F3F1EE;
 		color:black;
 	}
 	.modal.left .modal-dialog,
@@ -171,7 +201,6 @@ align-content: center;
 	.flip-card
 	{
 				  perspective: 1000px;
-
 	}
   .flip-card-inner {
   width: 78px;
@@ -189,7 +218,6 @@ align-content: center;
     transform: rotateY(180deg);
     z-index: 1;
 		}
-
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -264,6 +292,19 @@ align-content: center;
 		background-color:papayawhip;
 		cursor:pointer;
 	}
+	.gp
+	{
+		
+		padding: 5px;
+		margin: 5px;
+	}
+	.gp h3{
+		color:whitesmoke;
+		background-color:#CD4346;
+	}
+	.gp h5{
+		color:black;
+	}
 	
 </style>
 
@@ -280,17 +321,45 @@ align-content: center;
 		<div class="collapse navbar-collapse" id="firstNav">
 			<ul class="navbar-nav ml-auto">
 			<li class="nav-item active"><a href="#"class="nav-link">Home</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">About AIACTR</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">AIACTR Societies</a></li>
 			<li class="nav-item dropdown"></li>
 			<li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
 			<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="proDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Programmes
         </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#"><font color=#DBCECE>Graduate</font></a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><font color=#DBCECE>Post Graduate</font></a>
+        <div class="dropdown-menu dropdown-menu-right dpdn" aria-labelledby="navbarDropdown">
+           <center>
+			  <div class="gp">
+			  <h3 id="font-federo">Graduate Programmes</h3>
+			<h5 id="merriweather">1.&nbsp;B.Tech. CSE(Computer Science and Engineering)</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Duration : 4 Years</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Intake : 60</h5>
+			<hr style="color: grey;"/>
+			<h5 id="merriweather">2.&nbsp;B.Tech. ECE(Electronics and Communication Engineering)</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Duration : 4 Years</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Intake : 120</h5>
+			
+			  <br/>
+			 
+			  <h3 id="font-federo">Post Graduate Programmes</h3>
+				 <h4 id="merriweather" style="color:black">Computer Science Department</h4>
+			<h5 id="merriweather" style="color:black">1.&nbsp;M.Tech.[Information Security]</h5>
+			  <h5 id="merriweather" style="color:black">&#8226;&nbsp;Duration : 2 Years</h5>
+			  <h5 id="merriweather" style="color:black">&#8226;&nbsp;Intake : 18</h5>
+			<hr style="color: grey;"/>
+				 <h4 id="merriweather" style="color:black">Electronics Department</h4>
+			<h5 id="merriweather" style="color:black">1.&nbsp;M.Tech.[Digital Communication]</h5>
+			  <h5 id="merriweather" style="color:black">&#8226;&nbsp;Duration : 2 Years</h5>
+			  <h5 id="merriweather" style="color:black">&#8226;&nbsp;Intake : 18</h5>
+				 <br/>
+				 <h4 id="merriweather" style="color:black">2.&nbsp;B.Tech.[Radio Frequency]</h4>
+			  <h5 id="merriweather" style="color:black">&#8226;&nbsp;Duration : 2 Years</h5>
+			  <h5 id="merriweather" style="color:black">&#8226;&nbsp;Intake : 18</h5>
+				
+			  	  </div>		
+			
+			</center>
         </div>
 				</li>
 			<li class="nav-item dropdown">
@@ -298,28 +367,42 @@ align-content: center;
           Academics
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#"><font color=#DBCECE>Departments</font></a>
+          <a class="dropdown-item" href="#"><h5 id="merriweather">Departments</h5></a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><font color=#DBCECE>Syllabus</font></a>
+          <a class="dropdown-item" href="#"><h5 id="merriweather">Syllabus</h5></a>
 			<div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><font color=#DBCECE>Faculty Profile</font></a>
+          <a class="dropdown-item" href="#"><h5 id="merriweather">Faculty Profile</h5></a>
 		  <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><font color=#DBCECE>Academic Calender</font></a>
+          <a class="dropdown-item" href="#"><h5 id="merriweather">Academic Calender</h5></a>
 				</div></li>
 					<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="proDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           NIRF
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#"><font color=#DBCECE>NIRF2017</font></a>
+          <a class="dropdown-item" href="#"><h5 id="merriweather">NIRF2017</h5></a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><font color=#DBCECE>NIRF2019</font></a>
+          <a class="dropdown-item" href="#"><h5 id="merriweather">NIRF2019</h5></a>
         </div>
 				</li>
+			<li class="nav-item"><a href="#" class="nav-link">Voting</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
 
-			<li class="nav-item"><a href="#" class="nav-link">Login/Signup</a></li>
-			</ul>
+	<li class="nav-item dropleft dropdown">
+        <a class="nav-link " href="#" id="proDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Login/Signup
+        </a>
+        <div class="dropdown-menu dropdown-menu-right  snp"  aria-labelledby="navbarDropdown">
+           <form action="includes/login.inc.php" method="POST" id="main">
+				  <div class="form-group" id="main">
+			 <input  type="text" name="user" class="form-control" placeholder="enrollment-no." required>
+          <input  type="password" name="pwd" class="form-control" placeholder="Password" required>
+					          <button type="submit" name="submit" class="btn btn-default">login</button>
+
+        </div>
+		  </form>
+        </div>
+				</li>			</ul>
 		</div>
 		</div>
 	</nav>
@@ -331,18 +414,14 @@ align-content: center;
 				<div class="modal-body">
 					<ul class="navbar-nav ml-auto">
 			<li class="nav-item active"><a href="#"class="nav-link">Home</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">About AIACTR</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">AIACTR Societies</a></li>
 			<li class="nav-item dropdown"></li>
 			<li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
 			<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="proDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link " href="#" id="proDropdown" role="button" data-toggle="modal" data-target="#programmes" aria-haspopup="true" aria-expanded="false">
           Programmes
         </a>
-        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#"><font color=#DBCECE>Graduate</font></a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><font color=#DBCECE>Post Graduate</font></a>
-        </div>
+       
 				</li>
 			<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="acaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -367,9 +446,12 @@ align-content: center;
           <a class="dropdown-item" href="#"><font color=#DBCECE>NIRF2019</font></a>
         </div>
 				</li>
+			<li class="nav-item"><a href="#" class="nav-link">Voting</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
 
-			<li class="nav-item"><a href="#" class="nav-link">Login/Signup</a></li>
+			<li class="nav-item">  <a class="nav-link " href="#"  role="button" data-toggle="modal" data-target="#login" aria-haspopup="true" aria-expanded="false">
+          Login/Signup
+        </a></li>
 			</ul>
 				</div>
 
@@ -433,7 +515,7 @@ align-content: center;
 
 	<div class="row">
 		<!--code for gallery -->
-		<div class="col-lg-6 col-md-6 col-sm-12 my-3 mx-3" style="background-color:#CD4346"><div class="gallery p-2"><h2 style="color:white" class="text-center" id="font-federo">Gallery</h2><center><img class="img-thumbnail" src="images/c.jpg" alt=""></center></div></div>
+		<div class="col-lg-6 col-md-6 col-sm-12 my-3 mx-3" style="background-color:#CD4346;border-radius: 10px;"><div class="gallery p-2"><h2 style="color:white" class="text-center" id="font-federo">Gallery</h2><center><img class="img-thumbnail" src="images/c.jpg" alt=""></center></div></div>
 		
 		<!--notice board starts here-->
 		<div class="col-lg-4 col-md-4 col-sm-12 ml-auto my-4">
@@ -449,7 +531,7 @@ align-content: center;
       <a class="nav-link" id="font-federo" data-toggle="pill" href="#menu1">RTI</a>
     </li>
     <li class="nav-item mr-auto">
-      <a class="nav-link" id="font-federo" data-toggle="pill" href="#menu2">Researches</a>
+      <a class="nav-link" id="font-federo" data-toggle="pill" href="#menu2">Projects</a>
     </li>
   </ul>
 
@@ -487,7 +569,7 @@ align-content: center;
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
       
-    <center><h3 id="font-federo">Researches</h3></center>
+    <center><h3 id="font-federo">Projects</h3></center>
 <div class=" notices" >
 			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reasearches notice will come here.</a> </div>
 			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
@@ -534,7 +616,81 @@ align-content: center;
 <br/>
 
 	</footer>
+	<div class="modal fade" id="programmes" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+      
+        <div class="modal-body">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			<br/>
+			<br/>
+ <center>
+			  <div class="gp">
+			  <h3 id="font-federo">Graduate Programmes</h3>
+			<h5 id="merriweather">1.&nbsp;B.Tech. CSE(Computer Science and Engineering)</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Duration : 4 Years</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Intake : 60</h5>
+			<hr style="color: grey;"/>
+			<h5 id="merriweather">2.&nbsp;B.Tech. ECE(Electronics and Communication Engineering)</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Duration : 4 Years</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Intake : 120</h5>
+			  </div>
+			  <br/>
+			 <div class="gp">
+			  <h3 id="font-federo">Post Graduate Programmes</h3>
+				 <h5 id="merriweather">Computer Science Department</h5>
+			<h5 id="merriweather">1.&nbsp;M.Tech.[Information Security]</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Duration : 2 Years</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Intake : 18</h5>
+			<hr style="color: grey;"/>
+				 <h5 id="merriweather">Electronics Department</h5>
+			<h5 id="merriweather">1.&nbsp;M.Tech.[Digital Communication]</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Duration : 2 Years</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Intake : 18</h5>
+				 <br/>
+				 <h5 id="merriweather">2.&nbsp;B.Tech.[Radio Frequency]</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Duration : 2 Years</h5>
+			  <h5 id="merriweather">&#8226;&nbsp;Intake : 18</h5>
+			  </div>
+			  			
+
+			
+			</center>
+      
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
 	
+	<div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+<br/>
+<br/>
+			<center><h4 style="color: grey;">Login</h4></center>
+			<br/>
+         <form action="includes/login.inc.php" method="POST" >
+				  <div class="form-group" style="width: 80%;">
+			 <input style="margin-bottom: 10px;" type="text" name="user" class="form-control" placeholder="Username/email" required>
+          <input style="" type="password" name="pwd" class="form-control" placeholder="Password" required>
+        </div>
+        <button style="background-color: lightskyblue;" type="submit" name="submit" class="btn btn-default">login</button>
+		  </form>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
 	<script>
 		$('.notice').hover(function(){
 			$(this).toggleClass('xyz');
