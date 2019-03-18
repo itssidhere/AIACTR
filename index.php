@@ -15,19 +15,30 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Work+Sans|Federo|Merriweather:300,400" rel="stylesheet">
+	  
+	  
 
 </head>
 
 <body>
 <style>
+	body{
+		background-repeat:no-repeat;
+		background-size:cover
+	}
 	@media(min-width:480px){
 		.dropdown:hover  .dropdown-menu{
 		display:block;
+			
+
 		
 	}
+	
+	
 		.dpdn{
 		 width: 50vw !important;
    		 height: 55vw !important;
+			background-color: white !important;
 	}
 		.snp 
 		{
@@ -43,7 +54,10 @@
 			
 		}
 	
-		
+		.dropdown-menu a
+		{
+			color: grey;
+		}
 	}
 	.snp button
 	{
@@ -68,9 +82,10 @@ background-color:#C3D7A4;
 		left: calc(-50vw + 50%);
     }
 	.navbar-nav > li > .dropdown-menu {
-		background-color:#F3F1EE;
-		color:black;
+	background-color: #343A40;
+		 
 	}
+	
 	.modal.left .modal-dialog,
 	.modal.right .modal-dialog {
 		position: fixed;
@@ -157,14 +172,16 @@ background-color:#C3D7A4;
 	}
 	/*main menu starts*/
   .box1{
-		height: 110px;
-		overflow-x: scroll;
-		overflow-y: hidden;
-		white-space: nowrap;
+		height: 110px !important;
+		overflow-x: scroll !important;
+		overflow-y: hidden !important;
+		white-space: nowrap !important;
+
 	}
 	.box1::-webkit-scrollbar {
 		display: none;
 		}
+	
 	.card-b{
 		font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 		width: auto;
@@ -186,47 +203,6 @@ align-content: center;
 			width: 70px;
 			height:90px;
 			border-radius: 8px;
-		}
-	.flip-card h6
-	{
-		display: none;
-	}
-	@media(min-width:500px)
-	{
-		
-		.flip-card h6
-		{
-			display: block;
-		}
-	.flip-card
-	{
-				  perspective: 1000px;
-	}
-  .flip-card-inner {
-  width: 78px;
-  height:97px;
-  position: relative;
-  text-align: center;
-  transition: transform 0.2s;
-  transform-style: preserve-3d;
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-	
-  .flip-card-back {
-    transform: rotateY(180deg);
-    z-index: 1;
-		}
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-    .flip-card-front {
-      z-index: 2;
-	  }
 	}
 	/*notice borad buttin color*/
 	
@@ -268,6 +244,7 @@ align-content: center;
 		.notice a{
 			font-size: 4px;
 		}
+		
 	}
 		#main {
   display: -webkit-flex; /* Safari */
@@ -305,11 +282,58 @@ align-content: center;
 	.gp h5{
 		color:black;
 	}
+	.mdl
+	{
+		background-color: white !important;
+	}
+	.mdl input{
+		border: 1px solid red;
+	}
+
+	.nav
+	
+	{
+		display:block;
+	}
+	
+	
+	.mynavbar
+	{
+		height: 40px;
+		background-color: #C3D7A4;
+		width: auto;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		
+		
+	}
+.mynavbar::-webkit-scrollbar
+	{
+		display: none;
+	}
+	.mynavitem
+	{
+		padding: 5px;
+		border-radius: 3px;
+		background-color: #353A41;
+		display: inline-block;
+		color: gray;
+		cursor: pointer;
+	}
+	footer
+	{
+	background-color: 	#353A41;
+		color: grey;
+		border-top-left-radius: 18px;
+		border-top-right-radius: 18px;
+		margin-top: 27px;
+	}
 	
 </style>
 
 
-<body >
+<body style="background-image:url(images/background.jpg)" >
 
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -389,7 +413,7 @@ align-content: center;
 			<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
 
 	<li class="nav-item dropleft dropdown">
-        <a class="nav-link " href="#" id="proDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link " href="#" id="proDropdown" style="outline: none;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Login/Signup
         </a>
         <div class="dropdown-menu dropdown-menu-right  snp"  aria-labelledby="navbarDropdown">
@@ -461,9 +485,9 @@ align-content: center;
 
 	<!-- End of Navbar -->
 	<br/>
-	<div class="container-fluid">
-		<h2 class="text-center" id="merriweather">AMBEDKAR INSTITUTE OF ADVANCED COMMUNICATION TECHNOLIGIES & RESEARCH</h2>
-		<h4 class="text-center" id="merriweather">(FORMERLY AMBEDKAR INSTITUTE OF TECHNOLOGY)</h4>
+	<div class="container-fluid" >
+		<h2 class="text-center" style="color: grey;" id="merriweather">AMBEDKAR INSTITUTE OF ADVANCED COMMUNICATION TECHNOLIGIES & RESEARCH</h2>
+		<h4 class="text-center" style="color: grey;" id="merriweather">(FORMERLY AMBEDKAR INSTITUTE OF TECHNOLOGY)</h4>
 
 		<img src="images/logo.png" height="100" width ="100" class="mx-auto d-block"><br/></br>
 	<div class="main-menu"><h2 class="text-center" id="font-federo" >Main Menu</h2>
@@ -471,59 +495,73 @@ align-content: center;
 
 	<!--main menu starts-->
   <center>
-<div class="box1">
-
-		<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/CAMPUS.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top:">Campus</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/CIRCULAR.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%; ">Circular</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/CITIZEN CHARTER.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 >Citizen<br/> Character</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/F&S.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Facilities <br/>and<br/> Services</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/FORMS.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Forms</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/GC.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Greivance<br/> Committee</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/LIBRARY.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%; ">Library</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/MD.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Mandatory<br/> Disclosure</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/ORDER.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Order</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/OS.jpg" class="img-rounded img3responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="font-size: 13px;">Organisation <br/>Setup</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/PD.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Principals<br/> desk</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/PUBLICATION.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Publication</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/SA.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Student <br/>Activities</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/SCHOLERSHIPS.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">Scholerships</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/V&M.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6>Vision<br/> and <br/>Mission</h6></div></div></div>
-
-	<div class="card-b flip-card"><div class="flip-card-inner"><div class="flip-card-front"><img src="images/FAQ.jpg" class="img-rounded img-responsive image" alt="Placeholder image"></div><div class="flip-card-back"><h6 style="margin-top: 50%;">FAQ</h6></div></div></div>
-
-
-
-
-		</div></center>
+<div class="mynavbar">
+	  <div class="mynavitem">Principles desk</div>
+	  <div class="mynavitem">Campus</div>
+	  <div class="mynavitem">Citizen Charter</div>
+	  <div class="mynavitem">Mandatory Disclosure</div>
+	  <div class="mynavitem">Library</div>
+	  <div class="mynavitem">Student Activities</div>
+	  <div class="mynavitem">Order</div>
+	  <div class="mynavitem">Publications</div>
+	  <div class="mynavitem">Forms</div>
+	  <div class="mynavitem">Circular</div>
+	  <div class="mynavitem">Facilities and Services</div>
+	  <div class="mynavitem">Greivance Committee</div>
+	  <div class="mynavitem">Organisation setup</div>
+	  <div class="mynavitem">Scholerships</div>
+	  <div class="mynavitem">Vision and Mission</div>
+	  <div class="mynavitem">FAQ</div>
+	  </div>
+		</center>
     
 </div>
 	<!--main menu ends-->
 
 	<div class="row">
 		<!--code for gallery -->
-		<div class="col-lg-6 col-md-6 col-sm-12 my-3 mx-3" style="background-color:#CD4346;border-radius: 10px;"><div class="gallery p-2"><h2 style="color:white" class="text-center" id="font-federo">Gallery</h2><center><img class="img-thumbnail" src="images/c.jpg" alt=""></center></div></div>
+		<div class="col-lg-6 col-md-6 col-sm-12 my-3 mx-3">
+		
+		<div class="tab-content">
+    <div id="a1" class="container p-0 tab-pane active"><br>
+		<div class="container-fluid p-0" >
+			<div class="gallery p-2" style="background-color:#CD4346;border-radius: 10px;"><h2 style="color:white;" class="text-center" id="font-federo">Gallery</h2><center><img class="img-thumbnail" src="images/c.jpg" alt=""></center></div>
+			
+			
+		</div>
+    </div>
+    <div id="a2" class="container-fluid p-0 tab-pane fade"><br>
+     <center><h3 id="font-federo">Principals Desk</h3></center> 
+	<div class="container-fluid p-0" >
+		<div class="box2 nav">
+		
+		</div>
+		
+		</div>
+    </div>
+    <div id="a3" class="container tab-pane fade"><br>
+      
+    <center><h3 id="font-federo">Projects</h3></center>
+<div class="" >
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reasearches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
+			
+		</div>
+    </div>
+  </div>
+		
+		</div>
 		
 		<!--notice board starts here-->
 		<div class="col-lg-4 col-md-4 col-sm-12 ml-auto my-4">
 			<div class="btcolor">
-  <center><h2 id="font-federo">Bulletin Board</h2></center>
+  <center><h2 id="font-federo" style="color: grey;">Bulletin Board</h2></center>
   <br>
   <!-- Nav pills -->
-  <ul class="nav nav-pills" role="tablist">
+  <ul class="nav nav-pills" style="display: flex;" role="tablist">
     <li class="nav-item ml-auto">
       <a class="nav-link active" id="font-federo" data-toggle="pill" href="#home">Notices</a>
     </li>
@@ -622,7 +660,7 @@ align-content: center;
       <!-- Modal content-->
       <div class="modal-content">
       
-        <div class="modal-body">
+        <div class="modal-body mdl">
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
 			<br/>
 			<br/>
@@ -672,7 +710,7 @@ align-content: center;
       <!-- Modal content-->
       <div class="modal-content">
         
-        <div class="modal-body">
+        <div class="modal-body mdl">
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
 <br/>
 <br/>
@@ -680,10 +718,10 @@ align-content: center;
 			<br/>
          <form action="includes/login.inc.php" method="POST" >
 				  <div class="form-group" style="width: 80%;">
-			 <input style="margin-bottom: 10px;" type="text" name="user" class="form-control" placeholder="Username/email" required>
+			 <input style="margin-bottom: 10px;" type="text" name="user" class="form-control" placeholder="enrollment no." required>
           <input style="" type="password" name="pwd" class="form-control" placeholder="Password" required>
         </div>
-        <button style="background-color: lightskyblue;" type="submit" name="submit" class="btn btn-default">login</button>
+        <button style="background-color: #C3D7A4;" type="submit" name="submit" class="btn btn-default">login</button>
 		  </form>
         </div>
         
