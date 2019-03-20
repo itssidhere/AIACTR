@@ -1,26 +1,5 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width", initial-scale=1, shrink-to-fit="no">
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.10.0/jquery.hoverIntent.js"></script>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<link href="https://fonts.googleapis.com/css?family=Work+Sans|Federo|Merriweather:300,400" rel="stylesheet">
-<link rel="stylesheet" href="css/custom.css">	  
-	  
-
-</head>
-
-
-<body >
-	<?php include 'header.php';?>
+<?php include 'base.php';?>
+<?php startblock('content') ?>
 	
 	<div class="container-fluid">
 	<div class="main-menu"><h2 class="text-center" id="font-federo" >Main Menu</h2>
@@ -51,16 +30,46 @@
 </div>
 	<!--main menu ends-->
 
-	<div class="row">
 		<!--code for gallery -->
-		<div class="col-lg-6 col-md-6 col-sm-12 my-3 mx-3">
-		
-		<div class="tab-content">
-    <div id="a1" class="container p-0 tab-pane active"><br>
+		<br>
 		<div class="container-fluid p-0" >
-			<div class="gallery p-2" style="background-color:#CD4346;border-radius: 10px;"><h2 style="color:white;" class="text-center" id="font-federo">Gallery</h2><center><img class="img-thumbnail" src="images/c.jpg" alt=""></center></div>
-			
-			
+			<div class="gallery p-2" style="background-color:#CD4346;"><h2 style="color:white;" class="text-center" id="font-federo">Gallery</h2>
+				
+			<div id="aiactr-gallery" class="carousel slide" data-ride="carousel">
+
+	  <!-- Indicators -->
+	  <ul class="carousel-indicators">
+		<li data-target="#aiactr-gallery" data-slide-to="0" class="active"></li>
+		<li data-target="#aiactr-gallery" data-slide-to="1"></li>
+		<li data-target="#aiactr-gallery" data-slide-to="2"></li>
+		 <li data-target="#aiactr-gallery" data-slide-to="3"></li>
+	  </ul>
+
+	  <!-- The slideshow -->
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img class="mx-auto d-block rounded" height="432" width="568" src="images/c.jpg" alt="">
+		</div>
+		<div class="carousel-item">
+		  <img class="mx-auto d-block rounded" height="432" width="568"  src="images/background.jpg" alt="">
+		</div>
+		<div class="carousel-item">
+		  <img class="mx-auto d-block rounded" height="432" width="568"  src="images/a.jpeg" alt="">
+		</div>
+		  <div class="carousel-item">
+		  <img class="mx-auto d-block rounded" height="432" width="568"  src="images/clg1.jpg" alt="">
+		</div>
+	  </div>
+
+	  <!-- Left and right controls -->
+	  <a class="carousel-control-prev" href="#aiactr-gallery" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#aiactr-gallery" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	  </a>
+
+	</div>
 		</div>
     </div>
     <div id="a2" class="container-fluid p-0 tab-pane fade"><br>
@@ -155,15 +164,6 @@
 		
 		</div>
 <!--Notice board ends here-->
-		
 	
 	</div>
-	
-
-	</div>
-
-<?php include 'footer.php';?>
-	
-	<script src="js/js1.js"></script>
-</body>
-</html>
+<?php endblock() ?>
