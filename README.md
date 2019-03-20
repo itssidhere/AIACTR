@@ -8,4 +8,4 @@ Upcoming Features:
 
 3) Projects section to display the list of currently active projects of the college
 
-4) Review section to collect reviews of student for Canteen etc
+4) Review section to collect reviews of students for Canteen etc
