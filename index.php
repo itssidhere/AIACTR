@@ -18,10 +18,8 @@
 
 </head>
 
-<body>
+
 <body >
-
-
 	<?php include 'header.php';?>
 	
 	<div class="container-fluid">
@@ -164,106 +162,8 @@
 
 	</div>
 
-<footer>
-	<center><h3>GGSIPU Links</h3></center>
-	<hr style="background-color:#353A41"/>
-	<center>
-		<a href="" style="color: grey;">Events/Announcements</a>
-		&nbsp;
-		&nbsp;
-		<a href="" style="color: grey;">Addmission 2019</a>&nbsp;
-		&nbsp;
-		<a href="" style="color: grey;">Academic policy</a>
-		&nbsp;
-		&nbsp;<a href="" style="color: grey;">Fee Notice</a>&nbsp;
-		&nbsp;
-		<a href="" style="color: grey;">Scheme/Syllabus</a>
-		&nbsp;
-		&nbsp;<a href="" style="color: grey;">Students Welfare</a>
-		&nbsp;
-		&nbsp;<a href="" style="color: grey;">Norms/Ordinances</a>
-		&nbsp;
-		&nbsp;<a href="" style="color: grey;">Fee Payments</a>
-	</center>
-<br/>
-<br/>
-
-	</footer>
-	<div class="modal fade" id="programmes" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-      
-        <div class="modal-body mdl">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			<br/>
-			<br/>
- <center>
-			  <div class="gp">
-			  <h3 id="font-federo">Graduate Programmes</h3>
-			<h5 id="merriweather">1.&nbsp;B.Tech. CSE(Computer Science and Engineering)</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Duration : 4 Years</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Intake : 60</h5>
-			<hr style="color: grey;"/>
-			<h5 id="merriweather">2.&nbsp;B.Tech. ECE(Electronics and Communication Engineering)</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Duration : 4 Years</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Intake : 120</h5>
-			  </div>
-			  <br/>
-			 <div class="gp">
-			  <h3 id="font-federo">Post Graduate Programmes</h3>
-				 <h5 id="merriweather">Computer Science Department</h5>
-			<h5 id="merriweather">1.&nbsp;M.Tech.[Information Security]</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Duration : 2 Years</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Intake : 18</h5>
-			<hr style="color: grey;"/>
-				 <h5 id="merriweather">Electronics Department</h5>
-			<h5 id="merriweather">1.&nbsp;M.Tech.[Digital Communication]</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Duration : 2 Years</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Intake : 18</h5>
-				 <br/>
-				 <h5 id="merriweather">2.&nbsp;B.Tech.[Radio Frequency]</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Duration : 2 Years</h5>
-			  <h5 id="merriweather">&#8226;&nbsp;Intake : 18</h5>
-			  </div>
-			  			
-
-			
-			</center>
-      
-        </div>
-        
-      </div>
-      
-    </div>
-  </div>
+<?php include 'footer.php';?>
 	
-	<div class="modal fade" id="login" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        
-        <div class="modal-body mdl">
-			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-<br/>
-<br/>
-			<center><h4 style="color: grey;">Login</h4></center>
-			<br/>
-         <form action="includes/login.inc.php" method="POST" >
-				  <div class="form-group" style="width: 80%;">
-			 <input style="margin-bottom: 10px;" type="text" name="user" class="form-control" placeholder="enrollment no." required>
-          <input style="" type="password" name="pwd" class="form-control" placeholder="Password" required>
-        </div>
-        <button style="background-color: #C3D7A4;" type="submit" name="submit" class="btn btn-default">login</button>
-		  </form>
-        </div>
-        
-      </div>
-      
-    </div>
-  </div>
 	<script src="js/js1.js"></script>
 </body>
 </html>
