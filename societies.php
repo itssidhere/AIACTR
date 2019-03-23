@@ -3,12 +3,12 @@
 <?php startblock('content') ?>
 	<center>
 		<div class="container-fluid nametag text-center mm mr-5 ml-5 hidelg" >
-		<h2 class="text-center" style="color: white;" id="merriweather">AIACTR SOCIETIES</h2>
+		<h2 class="text-center" style="color: white;" id="font-federo">AIACTR SOCIETIES</h2>
 
 </div></center>
 	<div class="myitembox mm"><center>
 		<div class="container-fluid nametag text-center mr-5 ml-5" >
-		<h2 class="text-center" style="color: #353A41;" id="merriweather">AIACTR SOCIETIES</h2>
+		<h2 class="text-center" style="color: #353A41;" id="font-federo">AIACTR SOCIETIES</h2>
 
 </div></center>
 		<div class="row">

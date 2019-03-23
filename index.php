@@ -2,28 +2,28 @@
 <?php startblock('content') ?>
 	
 	<div class="container-fluid">
-	<div class="main-menu"><h2 class="text-center" id="font-federo" >Main Menu</h2>
+	<div class="main-menu">
 
 
 	<!--main menu starts-->
   <center>
 <div class="mynavbar">
-	  <div class="mynavitem">Principles desk</div>
-	  <div class="mynavitem">Campus</div>
-	  <div class="mynavitem">Citizen Charter</div>
-	  <div class="mynavitem">Mandatory Disclosure</div>
-	  <div class="mynavitem">Library</div>
-	  <div class="mynavitem">Student Activities</div>
-	  <div class="mynavitem">Order</div>
-	  <div class="mynavitem">Publications</div>
-	  <div class="mynavitem">Forms</div>
-	  <div class="mynavitem">Circular</div>
-	  <div class="mynavitem">Facilities and Services</div>
-	  <div class="mynavitem">Greivance Committee</div>
-	  <div class="mynavitem">Organisation setup</div>
-	  <div class="mynavitem">Scholerships</div>
-	  <div class="mynavitem">Vision and Mission</div>
-	  <div class="mynavitem">FAQ</div>
+	  <div class="mynavitem"><span style="color:aqua"><i class="fas fa-check-double"></i></span> Principles Desk</div>
+	  <div class="mynavitem"><span style="color:#DA3A3C"><i class="fas fa-synagogue"></i></span> Campus</div>
+	  <div class="mynavitem"><span style="color: skyblue"><i class="fas fa-user-friends"></i></span> Citizen Charter</div>
+	  <div class="mynavitem"><span style="color:brown"><i class="fas fa-asterisk"></i></span> Mandatory Disclosure</div>
+	  <div class="mynavitem"><span style="color:#D68A24"><i class="fas fa-book"></i></span> Library</div>
+	  <div class="mynavitem"><span style="color:#BE4BDB"><i class="fas fa-user-graduate"></i></span> Student Activities</div>
+	  <div class="mynavitem"><span><i class="fas fa-gavel fa-spin"></i></span> Order</div>
+	  <div class="mynavitem"><span style="color:#94D82D"><i class="fab fa-searchengin"></i></span> Publications</div>
+	  <div class="mynavitem"><span style="color:#FF922B"><i class="fab fa-wpforms"></i></span> Forms</div>
+	  <div class="mynavitem"><span style="color:#FFC078"><i class="fas fa-circle-notch fa-spin"></i></span> Circular</div>
+	  <div class="mynavitem"><span style="color:deepskyblue"><i class="fas fa-concierge-bell"></i></span> Facilities and Services</div>
+	  <div class="mynavitem"><span style="color:mediumpurple"><i class="fas fa-users-cog"></i></span> Greivance Committee</div>
+	  <div class="mynavitem"><span style=color:greenyellow><i class="fas fa-sitemap"></i></span> Organisation setup</div>
+	  <div class="mynavitem"><span><i class="fas fa-user-check"></i></span> Scholarships</div>
+	  <div class="mynavitem"><span style="color:aqua"><i class="fas fa-mountain"></i></span>Vision and Mission</div>
+	  <div class="mynavitem"><span style="color:#4BCFB9"><i class="fas fa-question"></i></span> FAQ</div>
 	  </div>
 		</center>
     <br/>

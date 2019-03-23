@@ -145,12 +145,11 @@ background-color:#C3D7A4;
 		text-indent:0px;
 	}
 	.main-menu{
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
+		padding-top:20px;
 		background-color:#C3D7A4;
 	}
 	.gallery{
-		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 		color:grey;
 	}
 	/*main menu starts*/
@@ -180,7 +179,7 @@ align-content: center;
 		padding-left: 4px;
 		padding-right: 4px;
 		color: grey;
-		box-shadow: 3px 3px 3px 3px; grey;
+		box-shadow: 3px 3px 3px 3px grey;
 	}
 		.image{
 			width: 70px;
@@ -298,8 +297,8 @@ align-content: center;
 	.mynavitem
 	{
 		padding: 15px;
-		border-radius: 3px;
-		background-color: #353A41;
+		border-radius: 30px;
+		background-color: azure;
 		display: inline-block;
 		color: gray;
 		cursor: pointer;
