@@ -36,3 +36,4 @@ if($(window).width()>=1500){
 				$navimg.toggleClass('dis',$(this).scrollTop() > $nav.height());
   				});
 			}
+

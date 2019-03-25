@@ -2,12 +2,11 @@
 <?php startblock('content') ?>
 	
 	<div class="container-fluid">
-	<div class="main-menu">
+	<div class="main-menu mynavbar">
 
 
 	<!--main menu starts-->
   <center>
-<div class="mynavbar">
 	  <div class="mynavitem"><span style="color:aqua"><i class="fas fa-check-double"></i></span> Principles Desk</div>
 	  <div class="mynavitem"><span style="color:#DA3A3C"><i class="fas fa-synagogue"></i></span> Campus</div>
 	  <div class="mynavitem"><span style="color: skyblue"><i class="fas fa-user-friends"></i></span> Citizen Charter</div>
@@ -24,7 +23,6 @@
 	  <div class="mynavitem"><span><i class="fas fa-user-check"></i></span> Scholarships</div>
 	  <div class="mynavitem"><span style="color:aqua"><i class="fas fa-mountain"></i></span>Vision and Mission</div>
 	  <div class="mynavitem"><span style="color:#4BCFB9"><i class="fas fa-question"></i></span> FAQ</div>
-	  </div>
 		</center>
     <br/>
 </div>
@@ -72,32 +70,12 @@
 	</div>
 		</div>
     </div>
-    <div id="a2" class="container-fluid p-0 tab-pane fade"><br>
-     <center><h3 id="font-federo">Principals Desk</h3></center> 
-	<div class="container-fluid p-0" >
-		<div class="box2 nav">
-		
-		</div>
-		
-		</div>
-    </div>
-    <div id="a3" class="container tab-pane fade"><br>
-      
-    <center><h3 id="font-federo">Projects</h3></center>
-<div class="" >
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reasearches notice will come here.</a> </div>
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
-			
-		</div>
-    </div>
+  
   </div>
 		
 		</div>
 		
-		<!--notice board starts here-->
+		<!--notce board starts here-->
 		<div class="col-lg-4 col-md-4 col-sm-12 ml-auto my-4">
 			<div class="btcolor">
   <center><h2 id="font-federo" style="color: grey;">Bulletin Board</h2></center>

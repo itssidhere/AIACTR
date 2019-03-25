@@ -145,7 +145,7 @@ background-color:#C3D7A4;
 		text-indent:0px;
 	}
 	.main-menu{
-		padding-top:20px;
+		padding-top:1em;
 		background-color:#C3D7A4;
 	}
 	.gallery{
@@ -285,7 +285,6 @@ align-content: center;
 		background-color: #C3D7A4;
 		width: auto;
 		overflow-x: scroll;
-		overflow-y: hidden;
 		white-space: nowrap;
 		
 		
@@ -296,13 +295,22 @@ align-content: center;
 	}
 	.mynavitem
 	{
-		padding: 15px;
+		padding-top: 1em;
 		border-radius: 30px;
 		background-color: azure;
 		display: inline-block;
-		color: gray;
 		cursor: pointer;
+		height:60px;
+		width:200px;
+		transition: transform .2s;
+	
 	}
+.mynavitem:hover {
+	transform:scale(1.7);
+	background-color:aqua;
+	position:absolute;
+	
+}
 	footer
 	{
 	background-color: 	#353A41;
