@@ -306,9 +306,9 @@ align-content: center;
 	
 	}
 .mynavitem:hover {
-	transform:scale(1.7);
+	transform:scale(1.5);
 	background-color:aqua;
-	position:absolute;
+	
 	
 }
 	footer
