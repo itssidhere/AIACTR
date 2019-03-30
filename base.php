@@ -21,8 +21,7 @@
 </head>
 
 
-<body style="background-image: linear-gradient(white,#343A40) !important;
-">
+<body>
 	
 <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
 <div class="container-fluid">
