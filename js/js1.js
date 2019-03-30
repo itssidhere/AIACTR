@@ -37,3 +37,30 @@ if($(window).width()>=1500){
   				});
 			}
 
+
+
+			.navbar-toggler .top-bar {
+				transform: rotate(45deg);
+				transform-origin: 10% 10%;
+			  }
+			   
+			  .navbar-toggler .middle-bar {
+				opacity: 0;
+			  }
+			   
+			  .navbar-toggler .bottom-bar {
+				transform: rotate(-45deg);
+				transform-origin: 10% 90%;
+			  }
+			   
+			  .navbar-toggler.collapsed .top-bar {
+				transform: rotate(0);
+			  }
+			   
+			  .navbar-toggler.collapsed .middle-bar {
+				opacity: 1;
+			  }
+			   
+			  .navbar-toggler.collapsed .bottom-bar {
+				transform: rotate(0);
+			  }

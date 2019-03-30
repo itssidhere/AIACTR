@@ -2,7 +2,7 @@
 <?php startblock('content') ?>
 	
 	<div class="container-fluid">
-	<div class="main-menu mynavbar">
+	<div class="main-menu mynavbar" style="background:inherit;">
 
 
 	<!--main menu starts-->
@@ -30,8 +30,8 @@
 
 		<!--code for gallery -->
 		<br>
-		<div class="container-fluid p-0" >
-			<div class="gallery p-2" style="background-color:#CD4346;"><h2 style="color:white;" class="text-center" id="font-federo">Gallery</h2>
+		<div class="container-fluid p-0 m-0" >
+			
 				
 			<div id="aiactr-gallery" class="carousel slide" data-ride="carousel">
 
@@ -46,16 +46,16 @@
 	  <!-- The slideshow -->
 	  <div class="carousel-inner">
 		<div class="carousel-item active">
-		  <img class="mx-auto d-block rounded" height="432" width="568" src="images/c.jpg" alt="">
+		  <img class="mx-auto d-block rounded"  src="images/c.jpg" alt="">
 		</div>
 		<div class="carousel-item">
-		  <img class="mx-auto d-block rounded" height="432" width="568"  src="images/background.jpg" alt="">
+		  <img class="mx-auto d-block rounded"   src="images/background.jpg" alt="">
 		</div>
 		<div class="carousel-item">
-		  <img class="mx-auto d-block rounded" height="432" width="568"  src="images/a.jpeg" alt="">
+		  <img class="mx-auto d-block rounded"   src="images/a.jpg" alt="">
 		</div>
 		  <div class="carousel-item">
-		  <img class="mx-auto d-block rounded" height="432" width="568"  src="images/clg1.jpg" alt="">
+		  <img class="mx-auto d-block rounded"   src="images/clg1.jpg" alt="">
 		</div>
 	  </div>
 
@@ -66,82 +66,30 @@
 	  <a class="carousel-control-next" href="#aiactr-gallery" data-slide="next">
 		<span class="carousel-control-next-icon"></span>
 	  </a>
-
 	</div>
 		</div>
+		<br/>
+		<br/>
+		<div class="container-fluid">			<hr/>
+
+			<h2 id="merriweather" class="ml-3">Projects At AIACTR</h2>
+		<center><div class="projects">
+			<div class="fish"><div class="imgcaption">A project aimed at creating self cleaning ambedkar college because there this no facility here for this...</div><div class="mytext"><a>know more</a></div></div>
+			<div class="fish"><div class="imgcaption">A project aimed at creating self cleaning ambedkar college because there this no facility here for this...</div><div class="mytext"><a>know more</a></div></div>
+			<div class="fish"><div class="imgcaption">A project aimed at creating self cleaning ambedkar college because there this no facility here for this...</div><div class="mytext"><a>know more</a></div></div>
+			<div class="fish"><div class="imgcaption">A project aimed at creating self cleaning ambedkar college because there this no facility here for this...</div><div class="mytext"><a>know more</a></div></div>
+		
+			</div></center>
+		</div>
+		
     </div>
   
-  </div>
+  
 		
-		</div>
 		
-		<!--notce board starts here-->
-		<div class="col-lg-4 col-md-4 col-sm-12 ml-auto my-4">
-			<div class="btcolor">
-  <center><h2 id="font-federo" style="color: grey;">Bulletin Board</h2></center>
-  <br>
-  <!-- Nav pills -->
-  <ul class="nav nav-pills" style="display: flex;" role="tablist">
-    <li class="nav-item ml-auto">
-      <a class="nav-link active" id="font-federo" data-toggle="pill" href="#home">Notices</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="font-federo" data-toggle="pill" href="#menu1">RTI</a>
-    </li>
-    <li class="nav-item mr-auto">
-      <a class="nav-link" id="font-federo" data-toggle="pill" href="#menu2">Projects</a>
-    </li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
-      <center><h3 id="font-federo">Notices</h3></center>
-		<div class="container-fluid notices" >
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Notice regarding 2019 Addmission.</a> </div>
-			
-			
-		</div>
-    </div>
-    <div id="menu1" class="container tab-pane fade"><br>
-     <center><h3 id="font-federo">RTI</h3></center> 
-	<div class="container-fluid notices" >
-			
-			<div class="notice"><a href="">&#9679;&nbsp;Right to information Act 2001 and 2015.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Manuals Related to AIACTR prepared by RTI committee.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Information published under RTI Act.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;RTI appeals and their replies.</a> </div>
-			<div class="notice"><a href="">&#9679;&nbsp;Fifth Delhi finance commission (DFC) studies related documents.</a> </div>
-			
-		</div>
-    </div>
-    <div id="menu2" class="container tab-pane fade"><br>
-      
-    <center><h3 id="font-federo">Projects</h3></center>
-<div class=" notices" >
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reasearches notice will come here.</a> </div>
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
-			<div class="notice"><a href="#">&#9679;&nbsp;Link fro reaserches notice will come here.</a> </div>
-			
-		</div>
-    </div>
-  </div>
-</div>
 		
-		</div>
+		
 <!--Notice board ends here-->
 	
-	</div>
+	
 <?php endblock() ?>

@@ -21,13 +21,16 @@
 </head>
 
 
-<body >
+<body style="background-image: linear-gradient(white,#343A40) !important;
+">
 	
-<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
 <div class="container-fluid">
 <a class="navbar-brand" ><img src="images/logo.png" height="80" width="80" alt=""></a>
 
-<button type="button" class="navbar-toggler" data-toggle="modal" data-target="#menu" ><span class="navbar-toggler-icon"></span></button>
+<button type="button" class="navbar-toggler" data-toggle="modal" data-target="#menu" >
+<span class="navbar-toggler-icon"></span>
+</button>
 
 
 <div class="collapse navbar-collapse" id="firstNav">
@@ -97,7 +100,8 @@
   <a class="dropdown-item" href="#"><h5 id="merriweather">NIRF2019</h5></a>
 </div>
         </li>
-    <li class="nav-item"><a href="#" class="nav-link">Voting</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Notice<span class="badge"></span></a>
+		</li>
     <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
 
 <li class="nav-item dropleft dropdown">
@@ -158,7 +162,7 @@
   <a class="dropdown-item" href="#"><font color=#DBCECE>NIRF2019</font></a>
 </div>
         </li>
-    <li class="nav-item"><a href="#" class="nav-link">Voting</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Notice</a></li>
     <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
 
     <li class="nav-item">  <a class="nav-link " href="#"  role="button" data-toggle="modal" data-target="#login" aria-haspopup="true" aria-expanded="false">
@@ -274,6 +278,7 @@
 <br/>
 
 	</footer>
+
 	<script src="js/js1.js"></script>
 </body>
 </html>
